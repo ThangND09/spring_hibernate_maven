@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS dbdemo;
 USE dbdemo;
 
 CREATE TABLE school(
-   school_id int auto_increment primary key,
+   id int auto_increment primary key,
    name varchar(50) not null,
    location varchar(200) not null
 ) ENGINE=InnoDB;
@@ -13,9 +13,9 @@ CREATE TABLE student(
    first_name varchar(20) not null,
    last_name varchar(20) not null,
    dob Date,
-   school_id Int,
+   school_id int,
    FOREIGN KEY student(school_id)
-   REFERENCES school(school_id)
+   REFERENCES school(id)
 ) ENGINE=InnoDB;
  
 CREATE TABLE course(

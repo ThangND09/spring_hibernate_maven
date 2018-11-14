@@ -7,17 +7,17 @@ INSERT INTO school(name, location) VALUES('Ha Noi Univercity', 'Ha Noi');
 INSERT INTO school(name, location) VALUES('Da Nang Univercity', 'Da Nang');
 
 -- insert data to student table
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Nguyen', 'Thang', '1992-20-1', 1);
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Nguyen', 'Luan', '1992-19-3', 1);
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Phan', 'Phu', '1992-20-10', 1);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Nguyen', 'Thang', '1992-01-21', 1);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Nguyen', 'Luan', '1992-12-23', 1);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Phan', 'Phu', '1992-11-10', 1);
 
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Phan', 'Linh', '1994-20-1', 2);
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Nguyen', 'Anh', '1994-19-3', 2);
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Phan', 'Phu', '1992-05-1', 2);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Phan', 'Linh', '1994-10-21', 2);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Nguyen', 'Anh', '1994-12-29', 2);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Phan', 'Phu', '1992-05-15', 2);
 
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Pham', 'Chau', '1992-20-1', 3);
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Cu Thi', 'Tra My', '1992-19-3', 3);
-INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Le', 'Tuan', '1992-20-10', 3);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Pham', 'Chau', '1992-11-16', 3);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Cu Thi', 'Tra My', '1992-03-18', 3);
+INSERT INTO student(first_name, last_name, dob, school_id) VALUES('Le', 'Tuan', '1992-02-19', 3);
 
 -- insert data to course table
 INSERT INTO course(name) VALUES('Maths');
