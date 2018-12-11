@@ -17,6 +17,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="student")
 public class Student {
@@ -36,12 +38,14 @@ public class Student {
 	private Date dob;
 	
 	@ManyToOne()
+	@JsonIgnore
 	private School school;
 	
 	@ManyToMany(fetch= FetchType.LAZY, cascade= {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
 	@JoinTable(name="student_join_course", 
 				joinColumns=@JoinColumn(name="student_id"),
 				inverseJoinColumns=@JoinColumn(name="course_id"))
+	@JsonIgnore
 	private List<Course> courses;
 	
 	public Student() {
